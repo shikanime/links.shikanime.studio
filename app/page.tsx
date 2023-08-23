@@ -31,7 +31,7 @@ export default function Home() {
             @Shikanime
           </h2>
           <p className="mt-2 font-mono text-white">
-            もう一度人生を楽しくしましょう
+            让我们重新寻找生活的乐趣！
           </p>
         </div>
 
