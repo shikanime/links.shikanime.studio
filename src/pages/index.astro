@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import Avatar from "../assets/avatar.webp";
-import AvatarHappy from "../assets/avatar-happy.webp";
+import Avatar from "../../assets/avatar.webp";
+import AvatarHappy from "../../assets/avatar-happy.webp";
 ---
 
 <html lang="en">
@@ -24,6 +24,7 @@ import AvatarHappy from "../assets/avatar-happy.webp";
               width="150"
               height="150"
               class="rounded-full border-2 border-white"
+              quality="max"
             />
           </div>
           <div class="swap-off">
@@ -33,6 +34,8 @@ import AvatarHappy from "../assets/avatar-happy.webp";
               width="150"
               height="150"
               class="rounded-full border-2 border-white"
+              quality="max"
+              loading="eager"
             />
           </div>
         </label>
