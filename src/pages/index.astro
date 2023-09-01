@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import Avatar from "../assets/avatar.webp";
+import AvatarHappy from "../assets/avatar-happy.webp";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Shikanime</title>
+    <meta name="description" content="Shikanime" />
+  </head>
+  <body>
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col space-y-2 my-4">
+        <label class="swap">
+          <input type="checkbox" />
+          <div class="swap-on">
+            <Image
+              src={AvatarHappy}
+              alt="avatar happy"
+              width="150"
+              height="150"
+              class="rounded-full border-2 border-white"
+            />
+          </div>
+          <div class="swap-off">
+            <Image
+              src={Avatar}
+              alt="avatar"
+              width="150"
+              height="150"
+              class="rounded-full border-2 border-white"
+            />
+          </div>
+        </label>
+
+        <div class="text-center">
+          <h2 class="text-2xl font-mono font-bold text-white">@Shikanime</h2>
+          <p class="mt-2 font-mono text-white">让我们重新寻找生活的乐趣！</p>
+        </div>
+
+        <a
+          href="https://github.com/shikanime"
+          class="w-full btn btn-primary btn-circle font-sans font-bold"
+        >
+          💾 Github
+        </a>
+        <a
+          href="https://linkedin.com/in/williamphetsinorath"
+          class="w-full btn btn-primary btn-circle font-sans font-bold"
+        >
+          🗺️ LinkedIn
+        </a>
+        <a
+          href="https://myanimelist.net/profile/Shikalegend"
+          class="w-full btn btn-primary btn-circle font-sans font-bold"
+        >
+          🎏 MyAnimeList
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
