@@ -12,5 +12,5 @@ export default defineConfig({
     analytics: true,
     functionPerRoute: false,
   }),
-  site: "https://infinityhorizons.shikanime.studio",
+  site: "https://links.shikanime.studio",
 });
