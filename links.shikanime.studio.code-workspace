@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "name": "Links",
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "yzhang.markdown-all-in-one",
+      "sonarsource.sonarlint-vscode",
+      "github.vscode-pull-request-github",
+      "github.vscode-github-actions",
+      "streetsidesoftware.code-spell-checker",
+      "foxundermoon.shell-format",
+      "bradlc.vscode-tailwindcss",
+      "esbenp.prettier-vscode",
+      "astro-build.astro-vscode"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "command": "./node_modules/.bin/astro dev",
+        "name": "Server (Development)",
+        "request": "launch",
+        "type": "node-terminal"
+      }
+    ]
+  }
+}

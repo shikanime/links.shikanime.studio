@@ -7,20 +7,5 @@
     "ghcr.io/devcontainers/features/node": {
       "version": "v18"
     }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "yzhang.markdown-all-in-one",
-        "sonarsource.sonarlint-vscode",
-        "github.vscode-pull-request-github",
-        "github.vscode-github-actions",
-        "streetsidesoftware.code-spell-checker",
-        "foxundermoon.shell-format",
-        "bradlc.vscode-tailwindcss",
-        "esbenp.prettier-vscode",
-        "astro-build.astro-vscode"
-      ]
-    }
   }
 }
