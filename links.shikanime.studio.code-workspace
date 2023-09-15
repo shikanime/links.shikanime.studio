@@ -23,7 +23,7 @@
     "configurations": [
       {
         "command": "./node_modules/.bin/astro dev",
-        "name": "Server (Development)",
+        "name": "Launch Astro (Development)",
         "request": "launch",
         "type": "node-terminal"
       }
