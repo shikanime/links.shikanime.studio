@@ -17,7 +17,6 @@ export default defineConfig({
   ],
   output: "server",
   adapter: vercel({
-    analytics: true,
     functionPerRoute: false,
   }),
   site: "https://links.shikanime.studio",
