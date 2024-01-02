@@ -1,11 +1,4 @@
 {
-  "folders": [
-    {
-      "name": "Links",
-      "path": "."
-    }
-  ],
-  "extensions": {
     "recommendations": [
       "yzhang.markdown-all-in-one",
       "sonarsource.sonarlint-vscode",
@@ -17,16 +10,4 @@
       "esbenp.prettier-vscode",
       "astro-build.astro-vscode"
     ]
-  },
-  "launch": {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "command": "./node_modules/.bin/astro dev",
-        "name": "Launch Astro (Development)",
-        "request": "launch",
-        "type": "node-terminal"
-      }
-    ]
-  }
 }
