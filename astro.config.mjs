@@ -32,6 +32,10 @@ export default defineConfig({
       status: 307,
       destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=x'
     },
+    '/kf': {
+      status: 307,
+      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=ko-fi'
+    },
   },
   site: "https://links.shikanime.studio",
 });
