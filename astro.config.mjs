@@ -40,6 +40,10 @@ export default defineConfig({
       status: 307,
       destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=myanimelist'
     },
+    '/th': {
+      status: 307,
+      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=thread'
+    },
   },
   site: "https://links.shikanime.studio",
 });
