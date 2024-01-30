@@ -19,31 +19,5 @@ export default defineConfig({
   adapter: vercel({
     functionPerRoute: false,
   }),
-  redirects: {
-    '/li': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=linkedin'
-    },
-    '/ig': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=instagram'
-    },
-    '/x': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=x'
-    },
-    '/kf': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=ko-fi'
-    },
-    '/mal': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=myanimelist'
-    },
-    '/th': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=thread'
-    },
-  },
   site: "https://links.shikanime.studio",
 });
