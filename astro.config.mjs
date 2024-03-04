@@ -4,20 +4,16 @@ import vercel from "@astrojs/vercel/serverless";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind(),
-    sitemap(),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
-  ],
+  integrations: [tailwind(), sitemap(), partytown({
+    config: {
+      forward: ["dataLayer.push"]
+    }
+  })],
   output: "server",
-  adapter: vercel({
-    functionPerRoute: false,
-  }),
-  site: "https://links.shikanime.studio",
+  adapter: cloudflare(),
+  site: "https://links.shikanime.studio"
 });
