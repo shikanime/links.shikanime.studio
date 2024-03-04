@@ -1,8 +1,8 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,30 +16,6 @@ export default defineConfig({
     }),
   ],
   output: "server",
-  adapter: vercel({
-    functionPerRoute: false,
-  }),
-  redirects: {
-    '/li': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=linkedin'
-    },
-    '/ig': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=instagram'
-    },
-    '/x': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=x'
-    },
-    '/kf': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=ko-fi'
-    },
-    '/mal': {
-      status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=myanimelist'
-    },
-  },
+  adapter: cloudflare(),
   site: "https://links.shikanime.studio",
 });
