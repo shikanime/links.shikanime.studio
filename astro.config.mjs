@@ -1,8 +1,8 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,29 +16,30 @@ export default defineConfig({
     }),
   ],
   output: "server",
-  adapter: vercel({
-    functionPerRoute: false,
-  }),
+  adapter: cloudflare(),
   redirects: {
-    '/li': {
+    "/li": {
       status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=linkedin'
+      destination:
+        "/?utm_source=profile&utm_medium=sharing&utm_campaign=linkedin",
     },
-    '/ig': {
+    "/ig": {
       status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=instagram'
+      destination:
+        "/?utm_source=profile&utm_medium=sharing&utm_campaign=instagram",
     },
-    '/x': {
+    "/x": {
       status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=x'
+      destination: "/?utm_source=profile&utm_medium=sharing&utm_campaign=x",
     },
-    '/kf': {
+    "/kf": {
       status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=ko-fi'
+      destination: "/?utm_source=profile&utm_medium=sharing&utm_campaign=ko-fi",
     },
-    '/mal': {
+    "/mal": {
       status: 307,
-      destination: '/?utm_source=profile&utm_medium=sharing&utm_campaign=myanimelist'
+      destination:
+        "/?utm_source=profile&utm_medium=sharing&utm_campaign=myanimelist",
     },
   },
   site: "https://links.shikanime.studio",
