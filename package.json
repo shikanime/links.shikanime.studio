@@ -16,6 +16,7 @@
     "@astrojs/sitemap": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/inter": "^5.0.8",
+    "@tailwindcss/typography": "^0.5.15",
     "astro": "^4.4.11",
     "daisyui": "^4.0.0",
     "tailwindcss": "^3.3.3"
